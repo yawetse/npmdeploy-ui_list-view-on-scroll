@@ -1,0 +1,14 @@
+<div id="<%= dom_id %>" class="<%= dom_class %>">
+	<% for(x in listItems){
+		%>
+		<section class="<%= dom_section %>">
+			<article class="<%= dom_class_side %> <%= dom_class_side_left %>">
+				<%- listItems[x].left %>
+			</article>
+			<figure class="<%= dom_class_side %> <%= dom_class_side_right %>">
+				<%- listItems[x].right %>
+			</figure>
+		</section>
+		<%
+	}%>
+</div>
