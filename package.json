@@ -1,5 +1,5 @@
 {
-  "name": "list-view-on-scroll",
+  "name": "npmdeploy-ui-list-view-on-scroll",
   "description": "An on scroll effect template that animates the sides of sections once they are in the viewport.",
   "version": "0.0.1",
   "main": "index.js",
@@ -30,14 +30,16 @@
     "grunt-contrib-watch": "~0.5.3"
   },
   "keywords": [
-    "Amex Pub",
-    "amexpub",
-    "package",
-    "library"
+    "npmdeploy",
+    "dom",
+    "html",
+    "ui",
+    "ux",
+    "browser"
   ],
   "directories": {
     "test": "test"
   },
-  "author": "",
+  "author": "Yaw Joseph Etse",
   "license": "BSD-2-Clause"
 }
