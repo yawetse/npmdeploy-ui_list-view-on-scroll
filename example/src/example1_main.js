@@ -1,7 +1,7 @@
 'use strict';
 
 var listViewOnScroll = require('../../index'),
-	$ = require('bower-jquery');
+	$ = require('npmd-jquery');
 
 $(function(){
 	// alert("jquery works");
