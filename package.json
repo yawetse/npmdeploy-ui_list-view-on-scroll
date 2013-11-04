@@ -2,7 +2,7 @@
   "title":"NPMD UI - List View On Scroll",
   "name": "npmd-ui-list-view-on-scroll",
   "description": "An on scroll effect template that animates the sides of sections once they are in the viewport.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.x"
@@ -17,7 +17,9 @@
   "dependencies": {
     "classie": "0.0.1",
     "browsernizr": "~1.0.1",
-    "ejs": "~0.8.4"
+    "ejs": "~0.8.4",
+    "grunt-contrib-copy": "0.4.1",
+    "grunt-contrib-clean": "~0.5.0"
   },
   "devDependencies": {
     "chai": "1.5.0",
@@ -26,7 +28,6 @@
     "grunt-simple-mocha": "0.4.0",
     "grunt-jsbeautifier": "0.1.7",
     "mocha": "1.9.0",
-    "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-less": "~0.8.1",
     "grunt-contrib-watch": "~0.5.3"
   },

@@ -112,7 +112,7 @@ function inViewport( el, h ) {
 		scrolled = scrollY(),
 		viewed = scrolled + getViewportH(),
 		elTop = getOffset(el).top,
-		elBottom = elTop + elH,
+		elBottom = elTop + elH;
 		// if 0, the element is considered in the viewport as soon as it enters.
 		// if 1, the element is considered in the viewport only when it's fully inside
 		// value in percentage (1 >= h >= 0)
@@ -168,17 +168,18 @@ function listViewOnScroll(options){
 				_scrollPage();
 				resizeTimeout = null;
 			}
+
+			var resizeTimeout = setTimeout( delayed, 200 );
+
 			if ( resizeTimeout ) {
 				clearTimeout( resizeTimeout );
 			}
-			var resizeTimeout = setTimeout( delayed, 200 );
-		};
+		}
 
 		window.addEventListener( 'scroll', scrollHandler, false );
 		window.addEventListener( 'resize', resizeHandler, false );
 	}
 	function _scrollPage() {
-		var self = this;
 
 		sections.forEach( function( el, i ) {
 			if( inViewport( el, options.viewportFactor ) ) {

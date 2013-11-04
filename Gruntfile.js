@@ -61,7 +61,9 @@ module.exports = function(grunt) {
           // {expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
 
           // includes files within path and its sub-directories
-          {expand: true, src: ['assets/**'], dest: '../module/assets/'},
+          // {expand: true, src: ['assets/**'], dest: '../module/assets/'},
+          {expand: true,cwd: 'dist', src: ['**'], dest: '../../public/node_assets/npmd-ui-list-view-on-scroll/'},
+          {expand: true,cwd: 'lib', src: ['list-view-on-scroll.js'], dest: '../../public/node_assets/npmd-ui-list-view-on-scroll/'},
 
           // makes all src relative to cwd
           // {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
@@ -71,6 +73,7 @@ module.exports = function(grunt) {
         ]
       }
     },
+    clean: ['../../public/node_assets/npmd-ui-list-view-on-scroll/'],
     watch: {
       scripts: {
         // files: '**/*.js',
